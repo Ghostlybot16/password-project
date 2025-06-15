@@ -21,9 +21,9 @@ python main.py
 password_strength_checker/
 |   checker/
 |   |----__init__.py
-|   |----rules.py # Contains password rule functions
+|   |----rules.py             # Contains password rule functions
 |
-|   main.py # CLI entry point
+|   main.py                   # CLI entry point
 |   requirements.txt
 |   README.md
 ```
@@ -33,13 +33,15 @@ password_strength_checker/
 - Password input via command-line
 - Minimum length check (currently set to 8)
 - Uppercase letter check
+- Lowercase letter check
+- Digit existence check
 - DRY helper function to evaluate and report checks 
 - Descriptive docstrings and inline comments for maintainability
 
 
 ## Feature Roadmap
 
-- Add rules for lowercase, digits, and special characters 
+- Add rule for special characters 
 - Password scoring and strength grading system
 - Ability to custom change password length (8 or 12 or 16 length)
 - Email scoring and strength grading system

@@ -1,4 +1,4 @@
-from checker.rules import check_length, check_for_uppercase, check_for_lowercase
+from checker.rules import check_length, check_for_uppercase, check_for_lowercase, check_for_digit
 
 def main():
     """ 
@@ -23,6 +23,9 @@ def main():
     
     # Check if the password contains a lowercase 
     evaluate_and_report_check(check_for_lowercase, user_password, "Lowercase Check")
+    
+    # Check if the password contains a digit 
+    evaluate_and_report_check(check_for_digit, user_password, "Digit Existence Check")
 
 
 
