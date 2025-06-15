@@ -1,4 +1,4 @@
-from checker.rules import check_length, check_for_uppercase, check_for_lowercase, check_for_digit
+from checker.rules import check_length, check_for_uppercase, check_for_lowercase, check_for_digit, check_for_special_chars
 
 def main():
     """ 
@@ -26,6 +26,9 @@ def main():
     
     # Check if the password contains a digit 
     evaluate_and_report_check(check_for_digit, user_password, "Digit Existence Check")
+    
+    # Check if the password contains any special characters (!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~)
+    evaluate_and_report_check(check_for_special_chars, user_password, "Special Chars Check")
 
 
 
