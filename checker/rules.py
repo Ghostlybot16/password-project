@@ -1,3 +1,5 @@
+import string
+
 def check_length(password):
     """ 
     Check if the password is at least 8 characters long.
@@ -58,3 +60,19 @@ def check_for_digit(password):
         if character.isdigit():
             return True
     return False # Scanned entire password and found no digit
+
+
+def check_for_special_chars(password):
+    """ 
+    Check if the password contains at least one special character.
+    
+    Args:
+        password (str): The user input password to check
+    
+    Returns:
+        bool: True if at least one special character is found, False otherwise.
+    """
+    for character in password: # Iterate through the password checking for special characters
+        if character in string.punctuation:
+            return True
+    return False # Scanned entire password and found no special character
