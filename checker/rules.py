@@ -28,3 +28,19 @@ def check_for_uppercase(password):
         if letter.isupper():
             return True 
     return False # Scanned string and found no uppercase
+
+
+def check_for_lowercase(password):
+    """ 
+    Check if the password contains at least one lowercase letter.
+    
+    Args:
+        password (str): The user input password to check.
+    
+    Returns:
+        bool: True if at least one lowercase character is found, False otherwise
+    """
+    for letter in password: # Iterate through the password checking for lowercase
+        if letter.islower(): 
+            return True
+    return False # Scanned entire password and found no lowercase letter
