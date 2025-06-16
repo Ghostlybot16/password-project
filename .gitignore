@@ -3,3 +3,4 @@ venv/
 
 # Ignore pycache directory
 checker/__pycache__
+tests/__pycache__
